@@ -67,13 +67,7 @@ export default function MenuContent() {
           <ul className="internal-nav-links">
             {internalLinks.map((link) => (
               <li key={link.url}>
-                <a
-                  onClick={() => (setOpen(!open), scrollTo(link.url))}
-                  spy={true}
-                  smooth={true}
-                  offset={50}
-                  duration={500}
-                >
+                <a onClick={() => (setOpen(!open), scrollTo(link.url))}>
                   {link.component}
                 </a>
                 <img src={link.img} />

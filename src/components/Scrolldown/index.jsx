@@ -1,7 +1,5 @@
-import React from 'react'
+import React from "react";
 import "./style.scss";
 export default function Scrolldown() {
-  return (
-    <div class="section"></div> 
- )
+  return <div className="section"></div>;
 }

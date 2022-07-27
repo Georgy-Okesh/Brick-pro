@@ -35,7 +35,7 @@ const Background = styled.div`
   left: 0;
   bottom: 0;
   width: 100vw;
-  height: 125vh;
+  height: 174vh;
   z-index: -1;
   background-color: #0a0b10;
   background-size: auto 100vh;
