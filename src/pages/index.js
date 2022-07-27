@@ -35,7 +35,7 @@ const Index = () => {
     }
   }, [preloader]);
 
-  const [timer, setTimer] = React.useState(3);
+  const [timer, setTimer] = React.useState(17);
 
   const id = React.useRef(null);
 

@@ -1,13 +1,14 @@
+@import url("http://fonts.cdnfonts.com/css/bressay-trial");
 #preloader {
   background: -webkit-linear-gradient(
     218deg,
     #17244b,
     #17244b,
-    #ff003d,
-    #ff003d
+    #01384e,
+    #01384e
   );
-  background: -o-linear-gradient(218deg, #17244b, #17244b, #ff003d, #ff003d);
-  background: linear-gradient(232deg, #17244b, #17244b, #ff003d, #ff003d);
+  background: -o-linear-gradient(218deg, #17244b, #17244b, #01384e, #01384e);
+  background: linear-gradient(232deg, #17244b, #17244b, #01384e, #01384e);
   background-size: 600% 600%;
   background-position: 7% 0%;
   overflow: hidden;
@@ -32,7 +33,7 @@
 
 h5#headlineEvent {
   color: white;
-  font-size: 15px;
+  font-size: 3em;
   position: absolute;
   display: block;
   width: 100%;
@@ -40,12 +41,12 @@ h5#headlineEvent {
   padding: 0;
   top: 15%;
   text-align: center;
-  font-weight: 600;
-  font-family: Lato, TeX Gyre Adventor, "Montserrat", sans-serif;
+  font-weight: 700;
+  font-family: "Bressay Trial", sans-serif;
 }
 
 #preloader #container::after {
-  content: "You still here?\aHappy words\aGet outta here! No way!\aHow you doin?\a Believe in me\a Ain't life strange?\aYour website is loading\a Fun fun fun!\aHow you doin?\awww.sepsmichal.eu\a Believe in me\aHow you doin?\aYour own randomized sentence\a Another random line\aRandom line\aPretending activity\aHappy words\aSeagulls flying by\a Ain't life strange?\a Believe in me\a";
+  content: "Welcome\aWhat is your business about?\aWhat colors is your business/brand associated with?\aWho is your target market/audience?\a What kind of perception would you like your business/brand be associated with?\aYour website is loaded\a ";
   display: block;
   font-size: 30px;
   font-weight: 900;
@@ -102,14 +103,14 @@ h5#headlineEvent {
   background-size: 100% 122px;
   background-repeat: no-repeat;
   background-position: 0 -132px;
-  margin: 14px 0 0 0;
+  margin: 140px 0 0 0;
   color: #000;
   background-clip: text;
   text-fill-color: transparent;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  -webkit-animation: moveLine 18s ease-out 1;
-  animation: moveLine 18s ease-out 1;
+  -webkit-animation: moveLine 50s ease-out 1;
+  animation: moveLine 50s ease-out 1;
 }
 
 /*@keyframes moveLine {// <<<---- STATIC VERSION |
