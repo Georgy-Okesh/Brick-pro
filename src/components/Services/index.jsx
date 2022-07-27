@@ -341,24 +341,24 @@ const Services = () => {
       <Content ref={addToRefs}>
         <TextBlock
           topic="Develop"
-          title="We Develope high quality Web & App"
+          title="We Develop high quality Web & App"
           subText="We build appropriate solution to develope your website & app with best tools available"
         />
         <OBJ>
           <img src={Block} alt="Cone Object" width="400" height="400" />
         </OBJ>
-        <SvgBlock svg="Develop.svg" />
+        <SvgBlock svg="Modeling.svg" />
       </Content>
       <Content>
         <TextBlock
-          topic="Support"
-          title="We provide support for your digital presence"
+          topic="Analytics"
+          title="We provide business support analytics for your digital presence"
           subText="Once your system is online, we will stay on hand to help you use it and provide technical support and maintenance your business"
         />
         <OBJ>
           <img src={Capsule} alt="Capsule Object" width="400" height="400" />
         </OBJ>
-        <SvgBlock svg="Support.svg" />
+        <SvgBlock svg="Develop.svg" />
       </Content>
     </ServiceSection>
   );
