@@ -43,10 +43,14 @@ h5#headlineEvent {
   text-align: center;
   font-weight: 700;
   font-family: "Bressay Trial", sans-serif;
+  @media only screen and (max-width: 64em) {
+    font-size: 1.2em;
+    top: 15%;
+  }
 }
 
 #preloader #container::after {
-  content: "Welcome\aWhat is your business about?\aWhat colors is your business/brand associated with?\aWho is your target market/audience?\a What kind of perception would you like your business/brand be associated with?\aYour website is loaded\a ";
+  content: "Welcome\aWhat is your business about?\aWhat colors is your business/brand associated with?\aWho is your target market/audience?\a What kind of perception \ndoes your business/brand be elicit?\aYour website is loaded\a ";
   display: block;
   font-size: 30px;
   font-weight: 900;
@@ -111,6 +115,13 @@ h5#headlineEvent {
   -webkit-text-fill-color: transparent;
   -webkit-animation: moveLine 50s ease-out 1;
   animation: moveLine 50s ease-out 1;
+  @media only screen and (max-width: 64em) {
+    font-size: 3.3vw;
+    overflow: hidden;
+    display: flex;
+    margin: 0;
+    top: 65%;
+  }
 }
 
 /*@keyframes moveLine {// <<<---- STATIC VERSION |
@@ -282,11 +293,11 @@ h5#headlineEvent {
 }
 @media only screen and (max-height: 550px) {
   #preloader #container::after {
-    top: 65%;
+    top: 95%;
   }
 }
 @media only screen and (max-height: 350px) {
   #preloader #container::after {
-    top: 80%;
+    top: 90%;
   }
 }

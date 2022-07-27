@@ -84,25 +84,25 @@ const Testimonials = () => {
           <Card
             text="Brick has been essential part of our business. I would definetly
         recommend Brick. It has been amazing to have them."
-            name="Jenny (CodeCall)"
+            name="Jenny"
             image="avatar-1"
           />
 
           <Card
             text="Brick has been essential part of our business. I would definetly recommend Brick. It has been amazing to have them."
-            name="Jenny (CodeCall)"
+            name="John "
             image="avatar-2"
           />
 
           <Card
             text="Brick has been essential part of our business. I would definetly recommend Brick. It has been amazing to have them."
-            name="Jenny (CodeCall)"
+            name="Anita"
             image="avatar-3"
           />
 
           <Card
             text="Brick has been essential part of our business. I would definetly recommend Brick. It has been amazing to have them."
-            name="Jenny (CodeCall)"
+            name="Frank"
             image="avatar-4"
           />
         </Slider>

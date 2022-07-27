@@ -84,10 +84,9 @@ const Form = styled.form`
     }
   }
   span {
-    padding: 1rem calc(0.5rem + 0.5vw);
     align-items: center;
     text-align: center;
-    margin-bottom: 1rem;
+    margin-bottom: 0.5rem;
     color: #eff7f8;
   }
   textarea {
