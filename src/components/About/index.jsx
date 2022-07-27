@@ -41,10 +41,9 @@ export default function About() {
     >
       <SectionHeader title="about" id="about" />
       <p ref={ref} id="headline" className={cn({ "is-reveal": reveal })}>
-        Flirty Flowers is a blog about flowers and the floral designers who make
-        them into art. Creativity and the art of ‘making’ require dialogue. The
-        full purpose of the Flirty Flowers blog is to encourage and inspire. We
-        value art, we value insight, and we value opinion.
+        We help our customers to tell about themselves, to grow and standout in
+        an increasingly competitive digital world, through creative projects
+        that are able to attract and involve, creating strategic value.
       </p>
     </section>
   );
