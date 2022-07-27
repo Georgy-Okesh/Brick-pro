@@ -1,91 +1,18 @@
-import React, { useRef, useEffect, useState } from "react";
-import loadable from "@react-loadable/revised";
+import React from "react";
+import Loadable from "react-loadable";
 import "../styles/home.scss";
-import Home from "../containers/Home";
-import Preloader from "../components/Preloader";
-import About from "../components/About";
-import Services from "../components/Services";
-import styled from "styled-components";
-import Testimonials from "../components/Testimonials";
-import Contact from "../components/Contact";
-import Footer from "../components/Footer";
-import ScrollToTop from "../components/ScrollToTop";
-import useLocoScroll from "../hooks/useLocoScroll";
-import CustomCursor from "../CustomCursor";
 
-const Container = styled.div`
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  /* position: relative; */
-`;
+const loader = () => <div>Loading.</div>;
+//
+const HomeLazy = Loadable({
+  loader: () => import("../containers/Home"),
+  loading: loader,
+});
 
 const Index = () => {
-  const ref = useRef(null);
-  const [preloader, setPreload] = useState(true);
-
-  useLocoScroll();
-
-  useEffect(() => {
-    if (!preloader && ref) {
-      if (typeof window === "undefined" || !window.document) {
-        return;
-      }
-    }
-  }, [preloader]);
-
-  const [timer, setTimer] = React.useState(17);
-
-  const id = React.useRef(null);
-
-  const clear = () => {
-    window.clearInterval(id.current);
-    setPreload(false);
-  };
-
-  React.useEffect(() => {
-    id.current = window.setInterval(() => {
-      setTimer((time) => time - 1);
-    }, 1000);
-    return () => clear();
-  }, []);
-
-  React.useEffect(() => {
-    if (timer === 0) {
-      clear();
-    }
-  }, [timer]);
-
-  if (typeof window === "undefined" || !window.document) {
-    return null;
-  }
   return (
     <>
-      <CustomCursor />
-      {preloader ? (
-        <Preloader />
-      ) : (
-        <div
-          className="super-container"
-          id="super-container"
-          data-scroll-container
-        >
-          <Home className="home" id="home" />
-          <div className="other-container" id="other-container">
-            <About />
-          </div>
-          <Container>
-            <Services className="services" id="services" />
-            <div className="other-container" id="other-container">
-              <Testimonials className="testimonial" id="testimonial" />
-            </div>
-            <Contact className="contact" id="contact" />
-            <Footer />
-            <ScrollToTop />
-          </Container>
-        </div>
-      )}
+      <HomeLazy />
     </>
   );
 };
