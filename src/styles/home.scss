@@ -1,4 +1,73 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Anton&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Koulen&family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;1,200;1,300;1,400;1,600;1,700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap");
+@import url("http://fonts.cdnfonts.com/css/gloss-and-bloom");
+@import "./_mixins.scss";
+
+$bg-color: white;
+
 body {
-  color: black;
+  font-family: "Poppins", sans-serif;
+  background-color: $bg-color;
+  cursor: none;
+  scroll-behavior: smooth;
 }
 
+.other-container {
+  @include mq("tablet", min) {
+    margin-left: 75px;
+    padding-left: 50px;
+    border-left: 1px solid rgb(116, 116, 116);
+    width: calc(100vw - 126px); //margin, padding and border
+  } //margin, padding and border
+  // clip-path: inset(100% 0% 0% 0%);
+  // backface-visibility: hidden;
+}
+
+section {
+  padding: 100px 0;
+  .section-header {
+    margin-bottom: 50px;
+  }
+}
+.absolute {
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background-color: black;
+  z-index: 1;
+}
+.main-container {
+  position: relative;
+  height: 100vh;
+  display: flex;
+  align-items: flex-end;
+  width: calc(100vw - 50px); //margin, padding and border
+  margin: 0 auto;
+
+  h1 {
+    font-size: clamp(100px, 15vw, 15vw);
+    font-weight: bold;
+    margin-bottom: 10vh;
+    max-width: 75vw;
+    text-transform: uppercase;
+    font-family: "Anton", sans-serif;
+    color: #111;
+  }
+
+  @include mq("tablet", min) {
+    margin-left: 75px;
+    padding-left: 50px;
+    border-left: 1px solid rgb(116, 116, 116);
+    width: calc(100vw - 126px); //margin, padding and border
+  }
+  .lineParent {
+    overflow: hidden;
+  }
+  .lineChildren {
+    transform: translate(0, 500px);
+  }
+}

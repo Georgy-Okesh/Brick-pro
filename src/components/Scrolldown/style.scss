@@ -1,0 +1,56 @@
+@import "../../styles/_mixins.scss";
+
+.section {
+  background: none;
+  height: 100vh;
+  position: relative;
+  width: 25%;
+}
+
+.section::before {
+  animation: bounce 1s ease infinite;
+  bottom: 2rem;
+  color: #111;
+  content: "╲╱";
+  font-size: 2rem;
+  height: 4rem;
+  left: 50%;
+  letter-spacing: -1px;
+  line-height: 4rem;
+  margin-left: -3rem;
+  opacity: 0.8;
+  position: absolute;
+  text-align: center;
+  width: 6rem;
+}
+
+@keyframes bounce {
+  50% {
+    transform: translateY(-50%);
+  }
+}
+
+@include mq("tablet", max) {
+  .section {
+    background: none;
+    height: 100vh;
+    position: absolute;
+    width: 100%;
+  }
+  .section::before {
+    animation: bounce 1s ease infinite;
+    bottom: 2.5rem;
+    color: #111;
+    content: "╲╱";
+    font-size: 2rem;
+    height: 1.5rem;
+    left: 50%;
+    letter-spacing: -1px;
+    line-height: 4rem;
+    margin-left: -3rem;
+    opacity: 0.8;
+    position: absolute;
+    text-align: center;
+    width: 3rem;
+  }
+}

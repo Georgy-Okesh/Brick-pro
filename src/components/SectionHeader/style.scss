@@ -1,0 +1,13 @@
+.section-header {
+  text-transform: uppercase;
+  font-weight: 600;
+  letter-spacing: 1px;
+  font-size: 1.5vw;
+  font-family: "Koulen", cursive;
+  color: #111;
+  @media only Screen and (max-width: 48em) {
+    font-size: 70px;
+    align-items: center;
+    text-align: center;
+  }
+}

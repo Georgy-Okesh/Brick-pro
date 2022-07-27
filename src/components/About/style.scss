@@ -1,0 +1,21 @@
+@import "../../styles/_mixins.scss";
+.about-section {
+  p {
+    font-size: 70px;
+    line-height: 1.12;
+    opacity: 0;
+
+    > div {
+      opacity: 0;
+      transform: translateY(0px);
+    }
+    &.is-reveal {
+      opacity: 1;
+    }
+    @media only Screen and (max-width: 48em) {
+      font-size: 30px;
+      text-align: justify;
+      // opacity: 1;
+    }
+  }
+}
