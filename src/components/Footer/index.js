@@ -36,9 +36,7 @@ const Footer = () => {
     <FOOTER data-scroll-section>
       <CenterText>
         © 2022 Built and Design by{" "}
-        <a href="https://www.youtube.com/channel/UCeYt6blRBKuNrEg_-282fSA">
-          &nbsp;George Okello
-        </a>
+        <a href="https://www.georgeokello.me">&nbsp;George Okello</a>
       </CenterText>
     </FOOTER>
   );

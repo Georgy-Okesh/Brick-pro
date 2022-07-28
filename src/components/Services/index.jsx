@@ -38,10 +38,11 @@ const Background = styled.div`
   height: 174vh;
   z-index: -1;
   background-color: #0a0b10;
-  background-size: auto 100vh;
+  background-size: auto 174vh;
   background-repeat: no-repeat;
   @media only Screen and (max-width: 48em) {
-    height: 85vh;
+    background-size: auto 100vh;
+    height: 75vh;
   }
 `;
 
