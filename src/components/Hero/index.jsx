@@ -1,4 +1,4 @@
-import React, { useRef, useEffect } from "react";
+import React, { useEffect } from "react";
 import ContactButton from "../ContactButton";
 // import { pageData } from "../data";
 import SplitText from "../../utils/Split3.mini";
@@ -15,10 +15,6 @@ const Home = () => {
       linesClass: "lineChildren",
     });
 
-    const splitParent = new SplitText("#header-text", {
-      type: "lines",
-      linesClass: "lineParent",
-    });
 
     gsap.to(split.lines, {
       duration: 3,

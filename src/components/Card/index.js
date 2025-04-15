@@ -1,7 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 
-const CARD = styled.div`
+const Cards= styled.div`
   height: calc(8rem + 12vw);
   width: calc(9rem + 12vw);
   position: relative;
@@ -34,14 +34,14 @@ const Image = styled.div`
   filter: drop-shadow(0px -3px 3px var(--nav2));
 `;
 
-const TEXT = styled.h4`
+const Text= styled.h4`
   color: #111;
   padding: 0 calc(1rem + 1vw);
   text-align: center;
   font-size: calc(0.6rem + 0.5vw);
 `;
 
-const NAME = styled.h3`
+const Name= styled.h3`
   color: #f49f45;
   padding-top: 1rem;
   font-size: calc(0.5rem + 1vw);
@@ -51,11 +51,11 @@ const Card = ({ name, text, image }) => {
   const Avatar = require(`../../assets/${image}.jpg`).default;
 
   return (
-    <CARD>
+    <Cards>
       <Image img={Avatar} width="400" height="400" />
-      <TEXT>{text}</TEXT>
-      <NAME>{name}</NAME>
-    </CARD>
+      <Text>{text}</Text>
+      <Name>{name}</Name>
+    </Cards>
   );
 };
 

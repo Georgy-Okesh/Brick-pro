@@ -1,7 +1,7 @@
 import styled from "styled-components";
 import React from "react";
 
-const FOOTER = styled.footer`
+const Footers = styled.footer`
   padding: 1.2rem calc(2.5rem + 2.5vw);
   font-size: 1rem;
   display: flex;
@@ -33,12 +33,12 @@ const CenterText = styled.div`
 
 const Footer = () => {
   return (
-    <FOOTER data-scroll-section>
+    <Footers data-scroll-section>
       <CenterText>
         © 2022 Built and Design by{" "}
-        <a href="https://www.georgeokello.me">&nbsp;George Okello</a>
+        <a href="https://www.gokello.me">&nbsp;George Okello</a>
       </CenterText>
-    </FOOTER>
+    </Footers>
   );
 };
 

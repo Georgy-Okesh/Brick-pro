@@ -105,7 +105,7 @@ const Content = styled.div`
   }
 `;
 
-const OBJ = styled.div`
+const Obj = styled.div`
   position: absolute;
   top: 70%;
   display: flex;
@@ -334,9 +334,9 @@ const Services = () => {
           title="We build award winning Designs"
           subText="We help clients to build great design to attract more customers"
         />
-        <OBJ>
+        <Obj>
           <img src={Tube} alt="Tube Object" width="400" height="400" />
-        </OBJ>
+        </Obj>
         <SvgBlock svg="Design.svg" />
       </Content>
       <Content ref={addToRefs}>
@@ -345,9 +345,9 @@ const Services = () => {
           title="We Develop high quality Web & App"
           subText="We build appropriate solution to develope your website & app with best tools available"
         />
-        <OBJ>
+        <Obj>
           <img src={Block} alt="Cone Object" width="400" height="400" />
-        </OBJ>
+        </Obj>
         <SvgBlock svg="Modeling.svg" />
       </Content>
       <Content>
@@ -356,9 +356,9 @@ const Services = () => {
           title="We provide business support analytics for your digital presence"
           subText="Once your system is online, we will stay on hand to help you use it and provide technical support and maintenance your business"
         />
-        <OBJ>
+        <Obj>
           <img src={Capsule} alt="Capsule Object" width="400" height="400" />
-        </OBJ>
+        </Obj>
         <SvgBlock svg="Develop.svg" />
       </Content>
     </ServiceSection>
